@@ -1,18 +1,23 @@
 // BACKEND LOGIC
 
+var outputArray = [];
+
 function pingPong (num) {
   for (i = 1; i <= num; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-      return "Ping-Pong!";
+      outputArray.push("Ping-Pong!");
     } else if (i % 3 === 0) {
-      return "Ping";
+      outputArray.push("Ping");
     } else if (i % 5 === 0) {
-      return "Pong";
+      outputArray.push("Pong");
     } else {
-      return i;
+      outputArray.push(i);
     };
   };
+  outputArray = outputArray.join(" ");
 };
+
+console.log(outputArray);
 
 // FRONTEND LOGIC
 $(document).ready(function() {
@@ -20,7 +25,9 @@ $(document).ready(function() {
     $("#userOutput").detach();
     var input = $("input#userInput").val();
 
-    $("#output").append('<p id="userOutput">' + "a" + '</p>');
+    pingPong(input);
+
+    $("#output").append('<p id="userOutput">' + outputArray + '</p>');
 
     event.preventDefault();
   });
