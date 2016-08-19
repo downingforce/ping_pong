@@ -15,6 +15,24 @@ Numbers divisible by 15 are replaced with "ping-pong"
 
 A user should be able to enter a new number and see new results over and over again._
 
+## Specifications
+
+* _Program can count up to entered number_
+    _Example Input: 5_
+    _Example Output: [1,2,3,4,5]_
+* _Any number counted that is divisible by 3 is replaced with "ping"_
+    _Example Input: 3_
+    _Example Output: [1,2,ping]_
+* _Any number counted that is divisible by 5 is replaced with "pong"_
+    _Example Input: 5_
+    _Example Output: [1,2,ping,4,pong]_
+* _Any number counted that is divisible by 3 and 5 is replaced with "ping-pong"_
+    _Example Input: 15_
+    _Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]_
+* _Output is returned as a string with replacements included_
+    _Example Input: 5_
+    _Example Output: "1 2 ping 4 pong"_
+    
 ## Setup/Installation Requirements
 
 * _Clone this repository_
