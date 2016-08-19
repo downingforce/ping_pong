@@ -1,7 +1,7 @@
 # _Ping Pong Game_
 
 #### _The Ping Pong Game is a simple web application game built for the Epicodus Code Review, 08.19.2016_
-## _version 1.0_
+#### _version 1.0_
 
 #### By _**Jason Downing**_
 

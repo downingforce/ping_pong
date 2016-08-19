@@ -1,15 +1,26 @@
 // BACKEND LOGIC
 
-
+function pingPong (num) {
+  for (i = 1; i <= num; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      return "Ping-Pong!";
+    } else if (i % 3 === 0) {
+      return "Ping";
+    } else if (i % 5 === 0) {
+      return "Pong";
+    } else {
+      return i;
+    };
+  };
+};
 
 // FRONTEND LOGIC
-$(document).ready(function(){
+$(document).ready(function() {
+  $("#pingPong").submit(function(event) {
+    $("#userOutput").detach();
+    var input = $("input#userInput").val();
 
-  $("#survey").submit(function(event) {
-    var name = $("input#user_name").val();
-    var answer1 = $("#question1 option:selected").text()
-    var answer2 = $("#question2 option:selected").val()
-    $(".name").text(name);
+    $("#output").append('<p id="userOutput">' + "a" + '</p>');
 
     event.preventDefault();
   });
