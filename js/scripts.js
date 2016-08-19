@@ -17,9 +17,7 @@ function pingPong (num) {
   outputArray = outputArray.join(" ");
 };
 
-console.log(outputArray);
-
-// FRONTEND LOGIC
+// USER INTERFACE LOGIC
 $(document).ready(function() {
   $("#pingPong").submit(function(event) {
     $("#userOutput").detach();

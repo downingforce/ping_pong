@@ -6,7 +6,7 @@ body {
 }
 
 #pingHeader {
-  width: 270px;
+  width: 320px;
   line-height: 43px;
   margin: 100px auto 20px;
   font-size: 19px;
@@ -27,7 +27,7 @@ body {
 
 #pingPong {
   margin: 0 auto;
-  width: 270px;
+  width: 320px;
   padding: 20px;
   background: #f4f4f4;
   border-radius: 3px;
@@ -83,17 +83,12 @@ body {
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-#output {
-  font: "Comic Sans MS", cursive, sans-serif;
-  color: #404040;
-}
-
 #userOutput {
-  text-align: center;
+  text-align: justify;
   background: #2d4259;
   line-height: 1;
   margin: 10px auto 20px;
-  width: 270px;
+  width: 320px;
   padding: 20px;
   background: #f4f4f4;
   border-radius: 3px;
